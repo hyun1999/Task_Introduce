@@ -1,0 +1,730 @@
+@font-face {
+  font-family: "paybooc-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "paybooc-Bold", sans-serif;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d2dfdf;
+}
+.wrapper_v2 {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #edf4f4;
+}
+.sketch_book {
+  position: relative;
+  margin: 0 5%;
+  margin-top: 6vh;
+  width: 90%;
+  height: 88%;
+  background-color: #ffffff;
+  border-radius: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #686d6d;
+}
+
+.empty_space_top {
+  position: absolute;
+  align-self: start;
+  border: 2px solid #d1dfdf;
+  top: -3px;
+  width: 1%;
+  left: 1.5%;
+}
+
+.empty_space_bottom {
+  position: absolute;
+  align-self: end;
+  border: 2px solid #d1dfdf;
+  bottom: -3px;
+  width: 1%;
+  right: 1.5%;
+}
+
+.empty_space_top_v2 {
+  top: -3px;
+  position: absolute;
+  border: 2px solid #edf4f4;
+  width: 1%;
+  right: 1.5%;
+}
+.empty_space_bottom_left {
+  position: absolute;
+  align-self: start;
+  border: 2px solid #edf4f4;
+  bottom: -3px;
+  width: 1%;
+  left: 0%;
+}
+.empty_space_bottom_right {
+  position: absolute;
+  align-self: start;
+  border: 2px solid #edf4f4;
+  bottom: -3px;
+  width: 1%;
+  right: 0%;
+}
+.empty_space_bottom_v2 {
+  position: absolute;
+  align-self: start;
+  border: 2px solid #edf4f4;
+  bottom: -3px;
+  width: 1%;
+  left: 1.5%;
+}
+
+.spring_wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 2.5vh 0 0 5%;
+  width: 90%;
+}
+.spring_row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5%;
+}
+.spring_top,
+.spring_bottom {
+  width: 15px;
+  height: 30px;
+  border: 3px solid #373737;
+  background-color: #d2dfdf;
+  margin: 0 2vw;
+  display: flex;
+}
+
+.spring_top {
+  border-radius: 150px 150px 0 0;
+  border-bottom: none;
+}
+
+.spring_bottom {
+  border-radius: 0 0 150px 150px;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  display: absolute;
+}
+
+.bottom_right1 {
+  width: 100%;
+  flex-grow: 1;
+  border-right: 3px solid #ffffff;
+}
+
+.bottom_right2 {
+  width: 100%;
+  flex-grow: 2;
+}
+
+.bottom_right3 {
+  width: 100%;
+  flex-grow: 1;
+  border-right: 3px solid #b8c9c9;
+}
+
+.greeting_ment {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 5em;
+  font-weight: bold;
+  color: #373737;
+}
+.page_split {
+  width: 100vw;
+  border: none;
+  margin: 0 0;
+  height: 1vh;
+  background-color: #333;
+}
+
+.sketch_book_v2 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+  margin-top: 6vh;
+  width: 90%;
+  height: 88%;
+  background-color: #ffffff;
+  border-radius: 1%;
+  display: flex;
+  border: solid #686d6d;
+  position: relative;
+}
+
+.sketch_book_head {
+  position: relative;
+  width: 100%;
+  height: 14%;
+  background-color: #b8c9c9;
+  border: solid #686d6d;
+  border-top: #ffffff;
+  border-left: #ffffff;
+  border-right: #ffffff;
+  border-radius: 2%;
+  z-index: 10;
+}
+.my_name {
+  font-size: 4em;
+  font-weight: lighter;
+  color: #90a4a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+.sketch_book_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch_book_left_wrapper,
+.sketch_book_right_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sketch_book_left_header,
+.sketch_book_right_header {
+  border: 2px solid #373737;
+  border-radius: 3px;
+  height: 9vh;
+  width: 34vw;
+  display: flex;
+  align-items: center;
+  margin: 2vw;
+  position: relative;
+}
+
+.page2 {
+  width: 34vw;
+  height: 30vh;
+  object-fit: contain;
+  margin-bottom: 1.5vh;
+}
+.trapezoid {
+  width: 18%;
+  height: 100%;
+  background-color: #b8c9c9;
+  position: relative;
+  z-index: 0;
+  border-radius: 3px 0 0 3px;
+}
+.trapezoid_bottom {
+  position: absolute;
+  bottom: -3px;
+  border: 2px solid #ffffff;
+  width: 10.5%;
+}
+.live_in {
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sketch_book_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sketch_book_header {
+  border: 2px solid #373737;
+  border-radius: 5px;
+  height: 9vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.trapezoid_one {
+  width: 5%;
+  height: 100%;
+  background-color: #b8c9c9;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  display: absolute;
+}
+.mind {
+  font-size: 5vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 35%);
+  overflow: hidden;
+  color: #373737;
+}
+
+.sketch_book_wrapper_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 15vw;
+  margin-top: 5vh;
+  position: relative;
+}
+.sketch_book_header_one {
+  border: 2px solid #373737;
+  margin-top: -9%;
+  border-radius: 5px;
+  height: 9vh;
+  width: 90%;
+}
+.sketch_book_wrapper_mind {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sketch_book_left_wrapper_mind {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  align-items: center;
+}
+.mind_ment {
+  color: #373737;
+  font-size: 2.7vw;
+  margin-bottom: 2.5vh;
+  white-space: nowrap;
+}
+.mbti {
+  margin-top: 5vh;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 35vh;
+  height: auto;
+  object-fit: contain;
+}
+
+.sketch_book_wrapper_hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sketch_book_left_wrapper_hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: space;
+  align-items: center;
+}
+.sketch_book_right_wrapper_hobby {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15vw;
+  gap: 3%;
+  align-items: center;
+}
+.sketch_book_header_hobby {
+  border: 2px solid #373737;
+  border-radius: 5px;
+  height: 9vh;
+  width: 90%;
+  margin-top: 8vh;
+  align-items: center;
+}
+.hobby {
+  font-size: 5vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 37%);
+  overflow: hidden;
+  color: #373737;
+}
+.hobby_imgs {
+  width: 55vw;
+  max-width: 55vh;
+  height: auto;
+  object-fit: cover;
+}
+
+.hobby_ment {
+  color: #383838;
+  font-size: 3vw;
+  margin-top: 9vh;
+  margin-left: 15vw;
+  white-space: nowrap;
+}
+
+.award {
+  color: #383838;
+  font-size: 3vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+/* 기술 스택 */
+
+.stack_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 3vw;
+  overflow: hidden;
+  margin: 5vh 6vw;
+  margin-top: 6vh;
+  padding: 2%;
+}
+
+.stack {
+  background-color: #f6f6f6;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  gap: 9vh;
+  position: relative;
+  padding-bottom: 3vh;
+}
+
+.stack_frame {
+  background-color: #130f0f;
+  margin-top: 8vh;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid #373737;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack_picture {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.stack_name {
+  font-size: 2vw;
+  color: #373737;
+  text-align: center;
+}
+.stack_names {
+  text-align: center;
+}
+.stack_picture {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  z-index: 20;
+  object-fit: cover;
+}
+
+.triangle {
+  right: -1vw;
+  top: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-bottom: 3vw solid transparent;
+  border-right: 3vw solid #a5b5b6;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: -0.1vw;
+  right: -3.2vw;
+  border-left: 3.1vw solid transparent;
+  border-bottom: 3.1vw solid transparent;
+  border-right: 3.1vw solid #ffffff;
+}
+
+.triangle_bottom {
+  left: -1vw;
+  bottom: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid #a5b5b6;
+  border-top: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+}
+
+.triangle_bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1vw;
+  left: -3.2vw;
+  border-left: 3.1vw solid #ffffff;
+  border-top: 3.1vw solid transparent;
+  border-right: 3.1vw solid transparent;
+}
+/* 목표 */
+
+.goal_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3vw;
+  overflow: hidden;
+  margin: 10vh 6vw;
+  margin-top: 6vh;
+}
+.goal {
+  background-color: #f6f6f6;
+  width: 30vw;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12vh;
+  position: relative;
+  margin: 2%;
+}
+
+/* 목표 테두리 */
+.triangle_goal {
+  right: -1vw;
+  top: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-bottom: 3vw solid transparent;
+  border-right: 3vw solid #a5b5b6;
+}
+
+.triangle_goal::after {
+  content: "";
+  position: absolute;
+  top: -0.1vw;
+  right: -3.2vw;
+  border-left: 3.1vw solid transparent;
+  border-bottom: 3.1vw solid transparent;
+  border-right: 3.1vw solid #ffffff;
+}
+
+.triangle_bottom_goal {
+  left: -1vw;
+  bottom: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid #a5b5b6;
+  border-top: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+}
+
+.triangle_bottom_goal::after {
+  content: "";
+  position: absolute;
+  bottom: -0.1vw;
+  left: -3.2vw;
+  border-left: 3.1vw solid #ffffff;
+  border-top: 3.1vw solid transparent;
+  border-right: 3.1vw solid transparent;
+}
+
+.goal_name {
+  font-size: 1.8vw;
+  margin: 5vw;
+  color: #373737;
+  white-space: nowrap;
+}
+
+/* 프로젝트 경험 */
+
+.project_wrapper {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin: 0vh 6vw;
+  margin-top: 1vh;
+  padding: 2%;
+  position: relative;
+}
+
+.stack_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 3vw;
+  margin: 10vh 6vw;
+  margin-top: 6vh;
+}
+.project {
+  background-color: #f6f6f6;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  position: relative;
+}
+.project_name {
+  margin-top: 4vh;
+  font-size: 2vw;
+  color: #373737;
+}
+.project_picture_ticket,
+.project_picture_loto {
+  margin-top: 4vh;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 28vh;
+  z-index: 20;
+  object-fit: contain;
+}
+.project_sub {
+  margin-top: 3vh;
+  font-size: 1.6vw;
+  color: #373737;
+}
+.project_sub_one {
+  margin-top: 16vh;
+  font-size: 1.6vw;
+  color: #373737;
+}
+
+.project_title {
+  font-size: 4vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 35%);
+  height: 100%;
+  overflow: hidden;
+  color: #373737;
+}
+
+.sketch_book_header_project {
+  border: 2px solid #110f0f;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 8vh;
+  min-height: 7vh;
+  position: relative;
+}
+
+.triangle_project {
+  right: -1vw;
+  top: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-bottom: 3vw solid transparent;
+  border-right: 3vw solid #a5b5b6;
+}
+
+.triangle_project::after {
+  z-index: 40;
+  content: "";
+  position: absolute;
+  top: -0.1vw;
+  right: -3.2vw;
+  border-left: 3.1vw solid transparent;
+  border-bottom: 3.1vw solid transparent;
+  border-right: 3.1vw solid #ffffff;
+}
+
+.triangle_project_bottom {
+  left: -1vw;
+  bottom: -1vw;
+  z-index: 30;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2.9vw solid #a5b5b6;
+  border-top: 2.9vw solid transparent;
+  border-right: 2.9vw solid transparent;
+}
+
+.triangle_project_bottom::after {
+  left: -3.1vw;
+  bottom: -0.2vw;
+  z-index: 40;
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  border-left: 3vw solid #ffffff;
+  border-top: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+}
+
+/* 감사합니다 페이지 */
+.thank {
+  font-size: 3em;
+  color: #373737;
+}
+
+.trapezoid_origin {
+  width: 18%;
+  height: 100%;
+  background-color: #b8c9c9;
+  position: relative;
+  z-index: 0;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.trapezoid_bottom_origin {
+  position: relative;
+  bottom: 4px;
+  border: 2px solid #ffffff;
+  width: 11%;
+}
+
+.trapezoid_bottom_exp {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border: 2px solid #ffffff;
+  width: 11%;
+}
+
+@media (max-width: 800px) {
+  .body {
+    filter: blur(5px);
+  }
+}
